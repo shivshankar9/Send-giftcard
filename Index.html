@@ -39,6 +39,30 @@
 					<!--input fields-->
 					<form class="form" autocomplete="off" novalidate>
 						<fieldset>
+							<label for="card-number">From:</label>
+							<input type="text" class="input-card-info" maxlength="30" autofocus />
+						</fieldset>
+						<fieldset>
+							<label for="card-holder">To:</label>
+							<input type="text" class="input-card-info" maxlength="30" />
+						</fieldset>
+						<fieldset>
+							<label for="card-holder">Message:</label>
+							<input type="text" class="input-card-info input-card-info--lg" maxlength="80" />
+						</fieldset>
+					</form>
+				</div>
+			</div>
+			<!--buttons parent-->
+			<div class="button-cnt">
+				<!--initial button-->
+	<button id="btn-card-flip" class="primary-cta">Customise</button>
+				<!--the two buttons which appear once card is flipped-->
+	<button id="close" class="secondary-cta secondary-cta--done hidden">Close</button>
+	<button id="btn-card-send" class="secondary-cta secondary-cta--send hidden">Send</button>
+			</div>
+		</div>
+	</div>
 							<script src="Main.js"></script>
 	
 </body>
