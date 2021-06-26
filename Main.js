@@ -22,3 +22,16 @@ $('#btn-card-send').click(function() { // 'send' button is pushed
 		setTimeout(function(){ 
 			$('input:text').val(''); }, 300);//scrub the input fields when card when is off canvas 
 		setTimeout(function(){ 
+			$('.card').removeClass('whoosh');}, 2400);//resets for the next send 
+			setTimeout(function(){ 
+			$('.confirmation').removeClass('visible');}, 1600);//resets for the next send
+			$("input:text:visible:first").focus(); //first field of form in auto-focus
+	});
+
+//flip the card to the front and change UI
+$('#close').click(function() { // 'close' button is pressed
+  $('.card').removeClass('flip'); // card flips over
+	$('#btn-card-flip').removeClass('hidden'); // 'customise' button becomes visible //
+	$('.secondary-cta').addClass('hidden'); // 'send/close' buttons go invisible //
+
+});
